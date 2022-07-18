@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/markdown1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="笔记（250字）"
+            android:maxLength="250"
+            android:textSize="20dp"
+            android:paddingTop = "5dp"
+            android:paddingLeft = "5dp"
+            android:paddingRight= "5dp"
+            android:paddingBottom= "5dp"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/titleBar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="270dp"
+                    android:layout_height="70dp"
+                    android:hint="未命名(9字)"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    android:textSize="24dp"
+                    android:background="@color/white"
+                    android:paddingTop = "5dp"
+                    android:paddingLeft = "10dp"
+                    android:paddingRight= "5dp"
+                    android:paddingBottom= "5dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="4"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/delete1"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_toLeftOf="@id/done1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="3dp"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop = "5dp"
+                    android:paddingLeft = "5dp"
+                    android:paddingRight= "5dp"
+                    android:paddingBottom= "5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:background = "@drawable/delete"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/edit1"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="3dp"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop = "5dp"
+                    android:paddingLeft = "5dp"
+                    android:paddingRight= "5dp"
+                    android:paddingBottom= "5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:background = "@drawable/edit"/>
+            </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/back1"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="3dp"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop = "5dp"
+                    android:paddingLeft = "5dp"
+                    android:paddingRight= "5dp"
+                    android:paddingBottom= "5dp"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:background = "@drawable/back"/>
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@drawable/fade_up"
+                android:layout_alignParentTop="@+id/titleBar1"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
